@@ -1,0 +1,96 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+#road img{
+    width: 100%;
+    background-size: cover;
+}
+.cars img{
+    width: 10%;
+    position: absolute;
+}
+.cars #car1{
+    width: 12%;
+    position: absolute;
+    align-items: center;
+    z-index: 1111;
+    top: 115%;
+    animation-name: yellowcar;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /* animation-direction: alternate-reverse; */
+    /* transform-origin: 50% 50%;
+    transform-origin: 50% 50%; */
+}
+@keyframes yellowcar{
+    1%{
+        margin-left: 0%;
+    }
+    50%{
+        margin-left: 40%;
+        transform: rotate(0deg);
+        
+    }
+    100%{
+        margin-left: 30%;
+        transform: rotatez(-570deg);
+    }
+}
+
+.cars #carright{
+    position: absolute;
+    align-items: center;
+    z-index: 1111;
+    top: 113%;
+    right: 2%;
+    animation-name: rightwcar;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /* animation-direction: alternate-reverse; */
+    /* transform-origin: 50% 50%;
+    transform-origin: 50% 50%; */
+    }
+@keyframes rightwcar {
+    1%{
+        margin-right: 0%;
+    }
+    50%{
+        margin-right: 37%;
+        
+    }
+    100%{
+        margin-right: 37%;
+        /* transform: rotatez(-500deg); */
+    }
+    }
+.cars #ambu{
+    position: absolute;
+    align-items: center;
+    z-index: 1111;
+    top: 116%;
+    left: -10%;
+    /* display: none; */
+    animation-name: ambu;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    /* animation-direction: alternate-reverse; */
+    /* transform-origin: 50% 50%;
+    transform-origin: 50% 50%; */
+}
+@keyframes ambu {
+    1%{
+        margin-left: 0%;
+    }
+    50%{
+        margin-left: 40%;
+    }
+    100%{
+        margin-left: 40%;
+    }
+    }
+
